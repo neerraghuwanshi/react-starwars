@@ -1,0 +1,53 @@
+.centredContainer{
+    width: 100vw;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label{
+    display: block;
+    width: 80vw;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0 0 20px 10vw;
+    background-color: var(--primaryContrastColor);
+}
+
+.radio{
+    margin-right: 10px;
+}
+
+.error{
+    color: var(--warningColor);
+}
+
+.tableContainer{
+    width: 80%;
+    overflow-x: scroll;
+    margin: auto;
+    background-color: var(--primaryContrastColor);
+}
+
+.table{
+    border-collapse: collapse;
+    background-color: var(--primaryContrastColor);
+    border: 2px solid var(--secondaryColor);
+}
+
+.tableContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.loadingContainer{
+    border: 2px solid var(--secondaryColor);
+    border-top-width: 0;
+}
+
+.loader{
+    width: 10%;
+    padding: 10px 20px;
+    margin: auto;
+}

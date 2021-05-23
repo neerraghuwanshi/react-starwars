@@ -1,0 +1,6 @@
+.td{
+    padding: 10px 20px;
+    border: 2px solid var(--secondaryColor);
+    white-space: nowrap;
+    text-align: center;
+}
