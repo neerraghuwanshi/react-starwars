@@ -6,6 +6,7 @@ export const fetchPeople = (endpoint, resolve, reject) => {
         let people = response.data.results
         for (let person of people){
             if (person.species.length > 0){
+                person.species[0] = person.species[0].replace('http', 'https')
                 await axios.get(person.species[0])
                 .then(response => {
                     person.icon = response.data.name
@@ -14,9 +15,6 @@ export const fetchPeople = (endpoint, resolve, reject) => {
             }
             else{
                 person.icon = null
-            }
-            if (person.species.length > 0){
-                person.species[0] = person.species[0].replace('http', 'https')
             }
         }
         await resolve(response)
