@@ -15,6 +15,9 @@ export const fetchPeople = (endpoint, resolve, reject) => {
             else{
                 person.icon = null
             }
+            if (person.species.length > 0){
+                person.species[0] = person.species[0].replace('http', 'https')
+            }
         }
         await resolve(response)
     })

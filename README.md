@@ -2,9 +2,12 @@
 
 # Assumptions
 1. Star Wars Api is a static api or supports Cursor Pagination.
-2. Species object of a character will always be an array and this array will have one single url to the api.
+2. Species object of a character will always be an array.
+   This array will have one single url to the api.
 3. The name attribute in the species api is its specie.
 4. No need to paginate the search query
+5. I only need to fetch the species urls.
+   I only need to update these urls to https.
 
 
 # Getting Started with Create React App
